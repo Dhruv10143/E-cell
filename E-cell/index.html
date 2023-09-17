@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<style>
+  body  {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    }
+    @media (min-width: 886px) {
+      .container {
+        flex-direction: row;
+        height: 100%;
+      }
+      .bloki1{
+        background-image: linear-gradient(to bottom right, #3d3df2,#8e44ad,#ff6868);
+        height:250px;
+        width: 250px;
+        gap:60px;
+        border-radius: 10px;
+      }
+      .bloki3{
+        align-items: center;
+        justify-content: center;
+        background-color:#ededed;
+        border:grey 5px solid;
+        height:250px;
+        width: 250px;
+        gap:60px;
+        border-radius: 10px;
+      }
+      .bloki2{
+        border:5px black solid;
+        border-radius:8%;
+        margin:10px;
+      }
+    }
+    @media (max-width: 886px) {
+      @media(min-width:572px){
+      .container {
+        flex-direction: column;
+        height: 100%;
+      }
+      .bloki1{
+        background-image: linear-gradient(to bottom right, #3d3df2,#8e44ad,#ff6868);
+        height:250px;
+        width: 700px;
+        gap:60px;
+        border-radius: 10px;
+      }
+      .bloki3{
+        align-items: left;
+        justify-content: left;
+        background-color:#ededed;
+        border:grey 5px solid;
+        margin-left:255px;
+        transform:translateY(-120%);
+        height:250px;
+        width: 250px;
+        
+        gap:10px;
+        border-radius: 10px;
+      }
+      .bloki2{
+        border:5px black solid;
+        border-radius:8%;
+        margin:10px;
+        transform:translateX(-60%);
+      }
+    }
+    @media(max-width: 572px){
+      .container {
+        flex-direction: column;
+        height: 100%;
+      }
+      .navig1{
+        display: block;
+      }
+      .navig{
+        flex-direction: column;
+      }
+      .h navig{
+        height:22px;
+      }
+      .v-class{
+         opacity:0;
+      }
+
+    }
+    }
+</style>
+</head>
+<body>
+    
+        <nav class="navig v-class h navig" align="right">
+          
+       
+            <a class="texter"  href="./index2.0.html">Home</a>
+            <a class="texter" href="./index.html">Grid</a>
+            <a class="texter"  href="https://linkedin.com/in/dhruv-chandhok-619965256/">LinkedIn</a>
+         
+        </nav >
+        <div class="navig1">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+       
+          <div class="container">
+            
+            <div class="bloki1"></div>
+            <div class="bloki2"><img  class="logos" src="1615316170379.jpg" height="260px" width="260px"/></div>
+            <div class="bloki3">
+                <div class="sets">
+                    <button class="w btn" id="b1">w</button>
+                    <button class="a btn" id="b2">a</button>
+                    <button class="s btn"id="b3">s</button>
+                    <button class="d btn" id="b4">d</button>
+                    <button class="j btn" id="b5">j</button>
+                    <button class="k btn " id="b6">k</button>
+                    <button class="l btn" id="b7">l</button>
+                    <button class="m btn"id="b8">m</button>
+                    <button class="n btn" id="b9">n</button>
+                  </div>
+            </div>
+          </div>
+
+          <script src="index.js" charset="utf-8"></script>
+</body>

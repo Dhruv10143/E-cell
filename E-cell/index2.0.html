@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #ddd;
+        align-items: center;
+        justify-content: center;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .container{
+        display: flex;
+        width: 100%;
+        height: 500%;
+        padding: 10px 10px;
+    }
+
+    .box{
+        flex: 2000%;
+        display:inline-block;
+        align-items: center;
+        text-align: center;
+        font-size: 40px;
+        background-color: #200c77;
+        color: #1d719e;
+        padding: 10px 10px;
+        border-radius: 20px;
+    }
+
+    .box img{
+        border-radius: 10%;
+        border: 0.5px solid #fff;
+        height: 300px;
+        width: 300px;
+    }
+    .box ul li{
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        
+    }
+
+    @media screen and (max-width: 1068px) {
+        .container{
+            display: table;
+        }
+
+        .box{
+            width: 100%;
+        }
+
+        .About{
+            width: 100%;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        .About h1{
+            text-align: center;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="gojo.jpg">
+            <ul>
+                <div>Dhruv Chandok</div>
+                <div>20226051</div>
+                <div><a href="index.html">Grid</div>
+            </ul>
+        </div>
+</body>
+</html>
